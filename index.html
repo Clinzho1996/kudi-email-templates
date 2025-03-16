@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kuditrak</title>
+		<style>
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				font-family: "Inter", sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			body {
+				width: 100%;
+				max-width: 600px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				position: relative;
+			}
+
+			body::before {
+				content: "";
+				position: absolute;
+				padding: 30px;
+				top: 0;
+				width: 100%;
+				height: 300px;
+				background-image: url("./images/bg.png");
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				z-index: -1;
+			}
+
+			.email-template {
+				width: 100%;
+				box-sizing: border-box;
+				margin-top: 20px;
+			}
+
+			.body {
+				background-color: #f6f8fa;
+				border: 1px solid #e2e4e9;
+				border-radius: 24px;
+				padding: 30px;
+				box-sizing: border-box;
+			}
+
+			.logo {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0px 0;
+			}
+
+			.logo img {
+				width: 150px;
+				margin: auto;
+				object-fit: contain;
+			}
+
+			.header {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 30px 0;
+			}
+
+			.header img {
+				width: 100%;
+			}
+
+			.form-body {
+				font-size: 13px;
+				font-weight: 500;
+				padding: 0 10px;
+			}
+
+			.form-body h2 {
+				color: #17363499;
+				font-size: 13px;
+				font-weight: 700;
+			}
+
+			.form-body .expect .check {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+			}
+
+			.form-body .expect .check img {
+				width: 20px;
+				height: 20px;
+			}
+
+			footer {
+				background-color: #d6f6f4;
+				border-radius: 10px;
+				padding: 20px;
+				margin-top: 30px;
+				text-align: center;
+			}
+
+			.footer .socials {
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+			}
+
+			.footer .socials img {
+				width: 23px;
+				height: 23px;
+			}
+
+			.footer .contact {
+				font-size: 13px;
+				margin-top: 10px;
+			}
+
+			.footer .contact h2 {
+				font-size: 13px;
+				font-weight: 600;
+			}
+
+			.footer .contact a {
+				color: #000000b2;
+				font-weight: 600;
+			}
+
+			@media (max-width: 600px) {
+				.body {
+					padding: 20px;
+				}
+
+				.form-body {
+					padding: 0;
+				}
+
+				.logo img {
+					max-width: 120px;
+				}
+
+				.header img {
+					width: 100%;
+				}
+
+				footer {
+					padding: 15px;
+				}
+
+				.footer .socials img {
+					width: 20px;
+					height: 20px;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.body {
+					padding: 15px;
+				}
+
+				.form-body {
+					font-size: 12px;
+				}
+
+				.form-body h2 {
+					font-size: 12px;
+				}
+
+				.footer .contact {
+					font-size: 12px;
+				}
+
+				.footer .socials img {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="email-template">
+			<div class="body">
+				<div class="logo">
+					<img src="./images/logo.png" alt="Kuditrak Logo" />
+				</div>
+
+				<div class="header">
+					<img src="./images/header.png" alt="Header Image" />
+				</div>
+
+				<div class="form-body">
+					<p>Dear <strong>Confidence Clinton,</strong></p>
+					<p>
+						Thanks for joining the waitlist for Kuditrak, the ultimate financial
+						budgeting app!
+					</p>
+					<p>
+						We're thrilled to have you on board and can't wait to help you take
+						control of your finances. Our app is designed to make budgeting
+						easy, intuitive, and even enjoyable!
+					</p>
+					<p>
+						We're excited to inform you that our beta program is right around
+						the corner! You can expect to receive an update from us as soon as
+						it's live and ready for download.
+					</p>
+
+					<div class="expect">
+						<h2>What You Can Expect:</h2>
+
+						<div class="check">
+							<img src="./images/checker.png" alt="Check Icon" />
+							<p>Track Your Spending in real-time</p>
+						</div>
+
+						<div class="check">
+							<img src="./images/checker.png" alt="Check Icon" />
+							<p>Set & Manage Budgets effortlessly</p>
+						</div>
+						<div class="check">
+							<img src="./images/checker.png" alt="Check Icon" />
+							<p>Get Smart Alerts & Push Notifications</p>
+						</div>
+						<div class="check">
+							<img src="./images/checker.png" alt="Check Icon" />
+							<p>Connect Your Bank Accounts securely</p>
+						</div>
+					</div>
+					<p>
+						We can't wait to hear your thoughts and see how Kuditrak transforms
+						your financial management experience.
+					</p>
+					<p>Thanks again for joining us on this journey!</p>
+					<p>Best Regards,</p>
+					<p class="team">
+						<strong>The Kuditrak Team</strong>
+					</p>
+				</div>
+
+				<footer>
+					<div class="footer">
+						<div class="socials">
+							<a href="https://www.facebook.com/kuditrak" target="_blank">
+								<img src="./images/facebook.png" alt="Facebook" />
+							</a>
+							<a href="https://www.instagram.com/kuditrak" target="_blank">
+								<img src="./images/instagram.png" alt="Instagram" />
+							</a>
+							<a
+								href="https://www.linkedin.com/company/kuditrak"
+								target="_blank">
+								<img src="./images/linkedin.png" alt="LinkedIn" />
+							</a>
+							<a href="https://youtube.com/kuditrak" target="_blank">
+								<img src="./images/youtube.png" alt="YouTube" />
+							</a>
+							<a href="https://x.com/kuditrak" target="_blank">
+								<img src="./images/x.png" alt="X" />
+							</a>
+						</div>
+
+						<div class="contact">
+							<h2>Got Questions? Email us at</h2>
+							<div>
+								<a href="mailto:support@kuditrak.ng">support@kuditrak.ng</a> or
+								call <a href="tel:+2348101759759">+234 810 175 9759</a>
+							</div>
+							<h2><a href="https://www.kuditrak.ng">Visit Our Website</a></h2>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
